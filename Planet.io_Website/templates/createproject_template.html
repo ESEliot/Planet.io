@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+{{ super() }}
+    <link rel="stylesheet" href="/static/css/Projects.css">
+{% endblock %}
+{% block title %} Create a Project {% endblock %}
+</head>
+<body>
+{% block jumbotitle %}Create a Project{% endblock %}
+{% block jumbodescription %}Create your project that has a positive impact on environment! The project will be public and people will be able to comment and discuss about your project.{% endblock %}
+
+{% block createprojectform %}
+    <div class="container">
+    <div class="col">
+        {% from 'includes/_formhelpers.html' import render_field %}
+    <form action="/createproject" method="POST">
+        {{ form.csrf_token }}
+      {{ form.hidden_tag() }}
+  <div class="form-group">
+    <label>Project Title</label>
+    {{ render_field(form.name, class_="form-control") }}
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">To which Challenge does your project matches the most in the list below?</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option value="form.challenge.o1">Land Pollution</option>
+        <option value="form.challenge.o2">Water Pollution</option>
+        <option value="form.challenge.o3">Ice Melting</option>
+        <option value="form.challenge.o4">Transport</option>
+        <option value="form.challenge.o5">Agriculture</option>
+        <option value="form.challenge.o6">Water Scarcity</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Description of your project:</label>
+      {{ render_field(form.description, class_="form-control", rows_="5") }}
+  </div>
+  <div class="form-group">
+      {{ render_field(form.file, class_="form-control-file") }}
+  </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        {{ form.submit }}
+    <br>
+  <br>
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+      <div class="alert alert-warning">
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+      </div>
+  {% endif %}
+{% endwith %}
+  {% if form.errors %}
+      <br>
+      <br>
+      <div class="alert alert-warning">
+    <ul >
+        {% for field_name, field_errors in form.errors|dictsort if field_errors %}
+            {% for error in field_errors %}
+                <li>{{ form[field_name].label }}: {{ error }}</li>
+            {% endfor %}
+        {% endfor %}
+    </ul>
+{% endif %}
+        </div>
+</form>
+    </div>
+    </div>
+{% endblock %}
+</body>
+</html>

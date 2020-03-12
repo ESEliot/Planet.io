@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+{{ super() }}
+    <link rel="stylesheet" href="/static/css/News.css">
+{% endblock %}
+{% block title %} News {% endblock %}
+</head>
+<body>
+
+{% block jumbotitle %}News{% endblock %}
+{% block jumbodescription %}{% endblock %}
+
+{% block breakingnews %}
+<!-- Breaking News -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Main News</h1>
+    </div>
+  <div class="card">
+    <img src="/static/images/NewsMain_img.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <a href="#"><h1 class="card-title">Article Title</h1></a>
+      <p class="card-text">Article Thumbnail...</p>
+      <a href="#"><small class="text-muted">Source Link</small></a>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Date</small>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+<!-- End Breaking News -->
+{% endblock %}
+
+{% block newrow %}
+<!-- News Row -->
+<div class="container-fluid">
+<div class="card-deck">
+  <div class="card">
+    <img src="/static/images/News1_img.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <a href="#"><h5 class="card-title">Article Title</h5></a>
+      <p class="card-text">Article Thumbnail...</p>
+      <a href="#"><small class="text-muted">Source Link</small></a>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Date</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/static/images/News2_img.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <a href="#"><h5 class="card-title">Article Title</h5></a>
+      <p class="card-text">Article Thumbnail...</p>
+      <a href="#"><small class="text-muted">Source Link</small></a>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Date</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/static/images/News3_img.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <a href="#"><h5 class="card-title">Article Title</h5></a>
+      <p class="card-text">Article Thumbnail...</p>
+      <a href="#"><small class="text-muted">Source Link</small></a>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Date</small>
+    </div>
+  </div>
+</div>
+<div class="card-deck">
+  <div class="card">
+    <img src="/static/images/News4_img.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <a href="#"><h5 class="card-title">Article Title</h5></a>
+      <p class="card-text">Article Thumbnail...</p>
+      <a href="#"><small class="text-muted">Source Link</small></a>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Date</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/static/images/News5_img.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <a href="#"><h5 class="card-title">Article Title</h5></a>
+      <p class="card-text">Article Thumbnail...</p>
+      <a href="#"><small class="text-muted">Source Link</small></a>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Date</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/static/images/News6_img.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <a href="#"><h5 class="card-title">Article Title</h5></a>
+      <p class="card-text">Article Thumbnail...</p>
+      <a href="#"><small class="text-muted">Source Link</small></a>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Date</small>
+    </div>
+  </div>
+</div>
+</div>
+<!-- End News Row -->
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+{% block head %}
+{{ super() }}
+    <link rel="stylesheet" href="/static/css/Library.css">
+{% endblock %}
+{% block title %} Library {% endblock %}
+</head>
+
+<body>
+{#{% block introductionjumbotron %}#}
+{#    {{ super() }}#}
+{#    {% block jumbotitle %}Library{% endblock %}#}
+{#    {% block jumbodescription %}You can find all archived articles and any relevant research paper on environement.{% endblock %}#}
+{#{% endblock %}#}
+{% block jumbotitle %}Library{% endblock %}
+{% block jumbodescription %}You can find all archived articles and any relevant research paper on environement.{% endblock %}
+
+
+{% block searchform %}
+  <!-- Search form -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>Search for anything:</h2>
+      <div class="md-form mt-0">
+        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+      </div>
+    </div>
+    </div>
+    <div class="row" id="listOfResources">
+      <div class="col"><h2>All resources:</h2></div>
+    </div>
+    <div class="row" id="listOfResources">
+      <div class="col">
+        <div class="card w-75">
+          <div class="card-body">
+            <a href="#"><h5 class="card-title">Resource Title</h5></a>
+            <p class="card-text">Resource thumbnail......</p>
+            <small>Publisher, Date, Type of Resource(News, Research Paper,...)</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="listOfResources">
+      <div class="col">
+        <div class="card w-75">
+          <div class="card-body">
+            <a href="#"><h5 class="card-title">Resource Title</h5></a>
+            <p class="card-text">Resource thumbnail......</p>
+            <small>Publisher, Date, Type of Resource(News, Research Paper,...)</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="listOfResources">
+      <div class="col">
+        <div class="card w-75">
+          <div class="card-body">
+            <a href="#"><h5 class="card-title">Resource Title</h5></a>
+            <p class="card-text">Resource thumbnail......</p>
+            <small>Publisher, Date, Type of Resource(News, Research Paper,...)</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="listOfResources">
+      <div class="col">
+        <div class="card w-75">
+          <div class="card-body">
+            <a href="#"><h5 class="card-title">Resource Title</h5></a>
+            <p class="card-text">Resource thumbnail......</p>
+            <small>Publisher, Date, Type of Resource(News, Research Paper,...)</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="listOfResources">
+      <div class="col">
+        <div class="card w-75">
+          <div class="card-body">
+            <a href="#"><h5 class="card-title">Resource Title</h5></a>
+            <p class="card-text">Resource thumbnail......</p>
+            <small>Publisher, Date, Type of Resource(News, Research Paper,...)</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="listOfResources">
+      <div class="col">
+        <div class="card w-75">
+          <div class="card-body">
+            <a href="#"><h5 class="card-title">Resource Title</h5></a>
+            <p class="card-text">Resource thumbnail......</p>
+            <small>Publisher, Date, Type of Resource(News, Research Paper,...)</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="container">
+  <div class="row">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+  </div>
+</div>
+
+  </div>
+  <!-- End Search form -->
+{% endblock %}
+</body>
+</html>

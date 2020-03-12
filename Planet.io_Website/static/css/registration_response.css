@@ -1,0 +1,20 @@
+#welcomejumbo{
+    background-color: #FFFF;
+    color: black;
+    margin-bottom: 0;
+    height: 80%;
+    width: 80%;
+}
+
+#welcomebtn {
+    background-color: #046A38;
+    color: #FFFF;
+    border: solid;
+}
+
+#welcomebtn:hover{
+  background-color: #FFFF;
+  color: #046A38;
+    border-color: #046A38;
+}
+

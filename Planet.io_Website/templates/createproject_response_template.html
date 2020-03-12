@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     {% block head %}
+{{ super() }}
+    <link rel="stylesheet" href="/static/css/log_in.css">
+         <link rel="stylesheet" href="/static/css/registration_response.css">
+{% endblock %}
+{% block title %} Project Submitted {% endblock %}
+</head>
+<body>
+{% block introductionjumbotron %}{% endblock %}
+
+{% block registrationsuccessfulsection %}
+    <div class="jumbotron" id="welcomejumbo">
+  <h1 class="display-4">Thank You for having submitted<em>{{ form.name.data }}</em></h1>
+  <p class="lead">Your project has been submitted! Our team will verify your submission within 24 hours!</p>
+  <hr class="my-4">
+  <p>While waiting, check out all other projects and solutions discussions here:</p>
+  <a class="btn btn-primary btn-lg" id="welcomebtn" href="/projects" role="button">Projects</a>
+    <a class="btn btn-primary btn-lg" id="welcomebtn" href="/solutions" role="button">Solutions</a>
+</div>
+{% endblock %}
+
+
+</body>
+</html>

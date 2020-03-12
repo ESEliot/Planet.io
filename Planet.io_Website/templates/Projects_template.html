@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+{{ super() }}
+    <link rel="stylesheet" href="/static/css/Projects.css">
+{% endblock %}
+{% block title %} Projects {% endblock %}
+</head>
+<body>
+
+{% block jumbotitle %}Projects{% endblock %}
+{% block jumbodescription %}Here are envrionmental friendly projects for a better future.{% endblock %}
+
+{% block addprojectbtn %}
+    <div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"><a href="/createproject"><button type="button" class="btn btn-success" id="buttoncreateproject"><h1>Create Project</h1></button></div></a>
+    <div class="col"></div>
+    </div>
+{% endblock %}
+
+{% block projectsList %}
+<!-- Projects Lists -->
+  <div class="container">
+    <!-- Search form -->
+      <div class="row">
+        <div class="col">
+          <h2>Search for a project:</h2>
+        <div class="md-form mt-0">
+          <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+        </div>
+      </div>
+      </div>
+
+    <!-- End Search form -->
+    <h1>All projects:</h1>
+  <div class="row">
+  <div class="col">
+    <div class="card mb-3">
+      <img src="/static/images/ProjectLists.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <a href="#"><h5 class="card-title">Project title</h5></a>
+        <p class="card-text">Project Description</p>
+        <p class="card-text"><small class="text-muted">Publisher Username, Date Published</small></p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col">
+    <div class="card mb-3">
+      <img src="/static/images/ProjectLists.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <a href="#"><h5 class="card-title">Project title</h5></a>
+        <p class="card-text">Project Description</p>
+        <p class="card-text"><small class="text-muted">Publisher Username, Date Published</small></p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col">
+    <div class="card mb-3">
+      <img src="/static/images/ProjectLists.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <a href="#"><h5 class="card-title">Project title</h5></a>
+        <p class="card-text">Project Description</p>
+        <p class="card-text"><small class="text-muted">Publisher Username, Date Published</small></p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="container">
+  <div class="row">
+  <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+  </div>
+  </div>
+
+<!-- End Projects Lists -->
+{% endblock %}
+
+</body>
+</html>

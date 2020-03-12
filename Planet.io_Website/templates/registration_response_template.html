@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     {% block head %}
+{{ super() }}
+    <link rel="stylesheet" href="/static/css/log_in.css">
+         <link rel="stylesheet" href="/static/css/registration_response.css">
+{% endblock %}
+{% block title %} Sign Up {% endblock %}
+</head>
+<body>
+{% block introductionjumbotron %}{% endblock %}
+
+{% block registrationsuccessfulsection %}
+    <div class="jumbotron" id="welcomejumbo">
+  <h1 class="display-4">Thank You <em>{{ form.data.name }}</em></h1>
+  <p class="lead">You have registered to Planet.io. You are now able to get involved in discussions on the forum!</p>
+  <hr class="my-4">
+  <p>Check out all projects and solutions discussions here:</p>
+  <a class="btn btn-primary btn-lg" id="welcomebtn" href="/projects" role="button">Projects</a>
+    <a class="btn btn-primary btn-lg" id="welcomebtn" href="/solutions" role="button">Solutions</a>
+</div>
+{% endblock %}
+
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+{% block head %}
+{{ super() }}
+    <link rel="stylesheet" href="/static/css/challenges.css">
+{% endblock %}
+{% block title %} Challenges {% endblock %}
+</head>
+<body>
+
+
+{% block jumbotitle %}Challenges{% endblock %}
+{% block jumbodescription %}This website is dedicated to present in the clearest way, all the challenges the environement faces today.{% endblock %}
+
+
+{% block challengesgrid %}
+<!-- Challenges Grid -->
+<div class="container text-center">
+  <div class="row">
+  <div class="col" id="cardChallenges">
+    <a href="#">
+      <div class="card bg-dark text-white">
+  <img src="/static/images/land_challenge.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h1 class="card-title">Land Pollution</h1>
+      </div>
+    </div>
+  </a>
+</div>
+  <div class="col" id="cardChallenges">
+    <a href="#">
+    <div class="card bg-dark text-white">
+  <img src="/static/images/ocean_challenge.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+      <h1 class="card-title">Water Pollution</h1>
+      </div>
+    </div>
+    </a>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col" id="cardChallenges">
+    <a href="#">
+    <div class="card bg-dark text-white">
+  <img src="/static/images/ice_melting_challenge.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h1 class="card-title">Ice Melting</h1>
+      </div>
+    </div>
+    </a>
+  </div>
+  <div class="col" id="cardChallenges">
+    <a href="#">
+    <div class="card bg-dark text-white">
+  <img src="/static/images/transport_challenge.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h1 class="card-title">Transport</h1>
+      </div>
+    </div>
+    </a>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col" id="cardChallenges">
+    <a href="#">
+    <div class="card bg-dark text-white">
+  <img src="/static/images/cow_challenges.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h1 class="card-title">Agriculture</h1>
+      </div>
+    </div>
+    </a>
+  </div>
+  <div class="col" id="cardChallenges">
+    <a href="#">
+    <div class="card bg-dark text-white">
+  <img src="/static/images/sink_challenges.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h1 class="card-title">Water Scarcity</h1>
+      </div>
+    </div>
+    </a>
+  </div>
+  </div>
+</div>
+<!-- End Challenges Grid -->
+{% endblock %}
+
+  <!-- Footer -->
+  <footer class="page-footer font-small pt-4">
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col">
+          <h5 class="display-4" id="planetIOLogo">Planet.io</h5>
+        </div>
+        <div class="col">
+          <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+          <li class="list-inline-item">
+            <h5 class="mb-1">Register for free:</h5>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="btn btn-dark btn-rounded">Sign up</a>
+          </li>
+        </ul>
+        <!-- Call to action -->
+          <a href="#"><h5 id="footerLinks">About Us</h5></a>
+          <a href="#"><h5 id="footerLinks">Contact</h5></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
